@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira Página Web</title>
+    <link rel="stylesheet" href="../Css/bootstrap.css"/>
+    <link rel="stylesheet" href="../Css/main.css"
+    
+</head>
+<body>
+    <center>
+        <!--Como utilizar comentários-->
+    <h1 ><br>Estoque<br></h1>
+
+    <div class="form-group col-md-3 bg-primary  rounded"  >
+        <label>Produto</label>
+        <input type="text" id="produto" list="lista_produtos" calss="form-control"> 
+            <datalist id="lista_produtos">
+                <option value="id=5">Capacitor</option>
+                <option value="Cadeira">Cadeira</option>
+                <option value="Chapéu">Chapéu</option>
+                <option value="Fantasia">Fantasia</option>
+                <option value="PCB">PCB</option>
+            </datalist>   
+
+    </div>
+
+    <div class="form-group col-md-3 bg-primary  rounded" >
+        <label>Quantidade</label>
+        <input id = "quantidade" type="number"  class="form-control">   
+
+    </div>
+
+    <div class="form-group col-md-3 bg-primary  rounded ">
+        <label>Preço</label>
+        <input id = "preço" type="number" class="form-control">   
+
+    </div>
+      
+    <button class="btn btn-primary">Salvar!</button>
+
+
+
+    </center>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>  
+</body>
+</html>
