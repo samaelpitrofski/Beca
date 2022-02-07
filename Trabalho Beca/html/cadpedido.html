@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pedidos</title>
+    <link rel="stylesheet" href="/Trabalho Beca/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Trabalho Beca/css/main.css">
+
+</head>
+<body>
+    <div class="container ">
+        <div class="row">
+            <div class="col-6 ">
+                <div class="card">
+                    <div class="card-body">
+                        <h1>Cadastro de Pedidos</h1>
+                        <form>
+                            <div class="form-group   rounded"  >
+                                <label>Data Atendimento:</label>
+                                <input class="form-control" id="date" type="date" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group    rounded"  >
+                                    <label>Hora de Inicio:</label>
+                                    <input class="form-control" type = "time" min="00:00" max= "24:00" required> 
+                                </div>
+                            
+                                <div class="form-group    rounded"  >
+                                    <label>Hora de Fim:</label>
+                                    <input class="form-control" type = "time" min="00:00" max= "24:00" required> 
+                                </div>
+                            </div>
+                            
+                            <div class="form-group    rounded"  >
+                                <label>CPF Cliente:</label>
+                                <input class="form-control" type="text" maxlength="14" id="CPF" required>
+                                <script src="/Trabalho Beca/js/macaraCPF.js"></script>
+                                <script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0/dist/cleave.min.js"></script>
+                            </div>
+                            
+                            <div class="form-group    rounded"  >
+                                <label>Nome Cliente:</label>
+                                <input class="form-control" type="text"  placeholder="vai ser add pelo id da cliente" required>
+                            </div>
+                            
+                            <div class="form-group  rounded"  >
+                                <label>Nome Serviço:</label>
+                                <input class="form-control" type="text" id="servico" list="servicos" calss="form-control"> 
+                                    <datalist id="servicos">
+                                        <option value="Pé e mão"></option>
+                                        <option value="Cabelo e barca"></option>
+                                        <option value="Corte Fem"></option>
+                                        <option value="Unha de Gel"></option>
+                                        <option value="Maquiagem"></option>
+                                    </datalist>   
+                            </div>
+                            
+                            <div class="form-group    rounded"  >
+                                <label>Valor:</label>
+                                <input class="form-control" type="text" placeholder="vai ser add pelo id do serviço" required>
+                            </div>
+                            
+                            <div class="form-group    rounded"  >
+                                <label>Endereço:</label>
+                                <input class="form-control" type="text" placeholder="vai ser add pelo id da cliente" required>
+                            </div>
+                            
+                            <div class="form-group    rounded"  >
+                                <label>CPF Parceira:</label>
+                                <input class="form-control" type="text" maxlength="14" id="CPF" required>
+                                <script src="/Trabalho Beca/js/macaraCPF.js"></script>
+                                <script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0/dist/cleave.min.js"></script>
+                            
+                            </div>
+                            
+                            <div class="form-group   rounded"  >
+                                <label>Nome Parceira:</label>
+                                <input class="form-control" type="text"  placeholder="vai ser add pelo id da parceira" required>
+                            </div>
+                            <br>
+
+                            <div class="form-group">
+                                <button type="button" class="btn btn-primary">Gerar</button>
+
+                            </div>
+                            <br>
+
+                            <div class="form-group">
+                                <label for="scripgerado">Script Insert:</label>
+                                <textarea class="form-control" name="scripgerado" id="script" placeholder="Script gerado para ser inserido no banco de dados"></textarea>
+                            </div>
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-body">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/143uSwhxa4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+        
+    
+
+<script src="/Trabalho Beca/js/jquery-3.4.1.slim.min.js"></script> 
+<script src="/Trabalho Beca/js/bootstrap.min.js"></script> 
+</body>
+</html>
